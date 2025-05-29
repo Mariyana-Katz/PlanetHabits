@@ -1,0 +1,84 @@
+
+.body{
+    background-color: antiquewhite;
+}
+.navbar{
+    background-color: rgb(35, 75, 35);
+    position: sticky;/*makes the navbar static */
+    top: 0; /* the navbar is on the top of the page*/
+    z-index: 1000; /* Keeps it above other elements */
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.navbar li{
+    display: inline-block; /* put the elements of the navbar in horizontal order*/
+    padding: 0 20px;
+
+}
+
+/*apply for all of the a from the navbar*/
+.navbar a{
+    text-decoration: none;
+    color: rgb(245, 235, 241);
+
+}
+
+.hero{
+        background-image: url("../images/PlanetHabits.jpg")  ;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family:'Lobster', sans-serif;
+        display: flex;
+        color: rgb(245, 241, 35);
+        font-size: large;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* <-- this keeps content at the top */
+        align-items: center;
+        height: 40vh; 
+        padding-top: 5%;
+            
+           
+    }
+
+    /* Card css */
+.container{
+    width: 1000px;
+    font-family: 'Playfair Display', sans-serif  !important;
+    text-size-adjust: 14;
+}
+
+/* Universal box-sizing */
+* {
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    height: 300px; /* or any height that works for all images */
+    object-fit: cover;
+  }
+
+  .card-title{
+    color:rgb(40, 94, 29);
+  
+  }
+
+  .btn-link{
+    color:rgb(40, 94, 29);
+  }
+
+
+  .modal-dialog{
+    align-items: center;
+    text-align: center;
+    background-color: rgb(201, 181, 156);
+  }
+
+  #bottle{
+    justify-content: center;
+    text-align: center;
+  }
+  

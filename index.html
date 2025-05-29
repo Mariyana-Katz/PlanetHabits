@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Habits</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./resources/css1/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <nav class="navbar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Home</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero section  -->
+    <header class="header">
+      <div class="hero">
+        <div class="container-xl text-center">
+          <div class="row align-items-start">
+            <div class="col-12">
+              <div
+                class="text-container px-5 pb-4 d-flex flex-column justify-content-start h-100 mb-5"
+              >
+                <h3 class="name display-3 pb-2">
+                  Track small changes. Make a big impact!
+                </h3>
+                <h4 class="pb-5"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- card section -->
+    <div class="section-card d-flex pt-3">
+      <div class="container-fluid">
+        <div class="row d-flex">
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/plant.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Planting for the Planet!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="plant"
+                  tabindex="-1"
+                  aria-labelledby="plantModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌱 Planting for the Planet
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        🌿 Nature Starts with You Planting isn't just about
+                        greenery — it's about giving back to the planet. Each
+                        plant helps filter pollutants, reduce urban heat, and
+                        bring beauty to the world around you.<br />
+                        🌾 Grow Today for Tomorrow Even a single potted plant on
+                        a windowsill contributes to a healthier environment.
+                        Imagine the impact when we all plant together. <br />🌻
+                        Biodiversity Begins at Home From native wildflowers to
+                        leafy trees, your garden or planter box becomes a safe
+                        haven for bees, butterflies, and birds. <br />🌎 Act
+                        Local, Grow Global No space is too small to make an
+                        impact. Balcony gardens, community plots, or
+                        reforestation projects — all lead toward a more
+                        sustainable Earth. <br />🌼 Mindful Planting, Meaningful
+                        Change The act of planting also nourishes your
+                        well-being. It’s a moment of connection — with the soil,
+                        the seasons, and something greater than ourselves.<br />
+                        🌳 Fun Planting Facts 🌿 One mature tree can absorb up
+                        to 48 pounds of CO₂ per year — that’s like erasing the
+                        emissions from driving 100 miles! Urban trees can cool
+                        cities by up to 9°F (5°C) in the summer — natural air
+                        conditioning! A single tree can provide a day’s oxygen
+                        for four people. Breathe easy! Plants can talk — sort
+                        of! They release chemical signals to warn nearby plants
+                        of danger or attract pollinators. Sunflowers clean the
+                        soil! They’re known to absorb toxins and were even used
+                        to help clean up after the Chernobyl disaster. Planting
+                        herbs like basil, mint, and lavender helps repel insects
+                        naturally — no chemicals needed. Houseplants aren’t just
+                        pretty — NASA studies found they can help remove air
+                        pollutants like formaldehyde and benzene indoors.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-primary rounded-pill"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/recycle bag.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/bottle.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/electricity.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/bicycle.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/recycle.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/water.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+          <div class="col-6 d-flex">
+            <div class="card" style="width: 30rem">
+              <img
+                src="resources/images/eco pictures/wood.JPG"
+                alt=""
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn btn-primary col-12 btn-lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  Refill, Reuse, Repeat!
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title fs-5 text-center w-100"
+                          id="bottle"
+                        >
+                          🌍 Environmental Benefits:
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        💧 Reusable Bottle: Small Habit, Big Impact Reduces
+                        Plastic Waste:<br /><br /><br />
+                        A single reusable bottle can replace hundreds of
+                        disposable plastic bottles each year. Prevents
+                        Pollution: Plastic bottles often end up in landfills,
+                        oceans, and waterways, harming wildlife and ecosystems.
+                        Saves Resources: Producing one plastic bottle requires
+                        3x the water it holds and contributes to carbon
+                        emissions from oil extraction, manufacturing, and
+                        transport.<br />
+                        💵 Economic Benefits: Buying bottled water regularly can
+                        cost hundreds of dollars annually—a reusable bottle pays
+                        for itself in just weeks.<br />
+                        💚 Health & Lifestyle Benefits: Made of safer materials
+                        (like stainless steel or BPA-free plastic), reusable
+                        bottles avoid the chemical leaching that can happen in
+                        cheap disposable plastics. They encourage better
+                        hydration since people tend to drink more water when
+                        carrying a bottle they love.<br />
+                        🌱 Fun Fact: Americans use 50 billion plastic water
+                        bottles each year. If just 1 in 10 people used a
+                        reusable bottle, we could cut out 5 billion bottles
+                        annually.
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End of the Modal section -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form id="habit-form">
+      <input
+        type="text"
+        id="habit-name"
+        placeholder="Enter eco habit"
+        required
+      />
+      <input type="date" id="habit-date" />
+      <button type="submit">Add Habit</button>
+    </form>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
